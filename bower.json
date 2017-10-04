@@ -1,0 +1,26 @@
+{
+  "name": "next-min-by",
+  "description": "This method is like .min except that it accepts iteratee which is invoked for each element in array to generate the criterion by which the value is ranked.",
+  "main": "dist/next-min-by.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/next-min-by",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
