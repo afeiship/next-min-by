@@ -1,30 +1,55 @@
 {
-  "name": "next-min-by",
-  "version": "0.0.0",
-  "description": "This method is like .min except that it accepts iteratee which is invoked for each element in array to generate the criterion by which the value is ranked.",
-  "homepage": "https://github.com/afeiship/next-min-by",
+  "name": "@jswork/next-min-by",
+  "version": "1.0.0",
+  "description": "This method is like _.min except that it accepts iteratee which is invoked for each element in array to generate the criterion by which the value is ranked.",
+  "homepage": "https://js.work",
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "test": "bun test",
+    "release": "release-it"
   },
-  "main": "dist/next-min-by.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "license": "MIT",
   "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-size": "^2.1.0",
-    "gulp-uglify": "^2.1.2",
-    "yargs": "^4.7.1",
-    "mocha": "^3.5.0"
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@jswork/gulp-pkg-header": "^1.0.8",
+    "@jswork/gulp-registry": "^1.0.45",
+    "@jswork/next": "^1.2.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-prettier": "^4.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-uglify": "^3.0.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "uglify-save-license": "^0.4.1"
   },
-  "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2"
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run pretty"
+    ]
   }
 }
