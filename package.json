@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-min-by",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This method is like _.min except that it accepts iteratee which is invoked for each element in array to generate the criterion by which the value is ranked.",
   "homepage": "https://js.work",
   "files": [
@@ -51,5 +51,10 @@
     "src/**/*.{js,jsx}": [
       "npm run pretty"
     ]
-  }
+  },
+  "keywords": [
+    "min-by",
+    "min",
+    "next"
+  ]
 }
