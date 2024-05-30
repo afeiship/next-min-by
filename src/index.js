@@ -1,6 +1,6 @@
 import nx from '@jswork/next';
 
-nx.minBy = function(inArrayLike, inKey, inOptions) {
+nx.minBy = function(inArrayLike, inKey) {
   const iterator = typeof inKey === 'function' ? inKey : (x) => x[inKey];
   let min = Infinity;
   let minItem = null;
